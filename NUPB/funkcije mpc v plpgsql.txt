@@ -1,0 +1,19 @@
+CREATE OR REPLACE FUNCTION vstaviIzdelek (id_ddv integer,ime varchar,pc float) RETURNS boolean AS $$
+DECLARE
+    davek FLOAT;
+    znesekdavek FLOAT;
+BEGIN
+    SELECT stopnja INTO davek FROM ddv WHERE id=id_ddv;
+    znesekdavek := (davek/100)*pc;
+    znesekdavek := ROUND(znesekdavek::numeric, 2);
+    INSERT INTO izdelki (ime_izdelka, prodajna_cena, ddv, malo_prodajna_cena)
+    VALUES (ime, prodajna_cena, id_ddv, (prodajna_cena + znesekdavek));
+    RETURN true;
+END;
+$$LANGUAGE plpgsql RETURNS NULL ON NULL INPUT;
+
+SELECT vstaviIzdelek(1, 'hrenovka', 3);
+SELECT vstaviIzdelek(2, 'cebula', 2.3);
+SELECT vstaviIzdelek(3, 'cesen', 1.9);
+SELECT vstaviIzdelek(2, 'cokolada', 2.2);
+SELECT vstaviIzdelek(3, 'travarica', 5);

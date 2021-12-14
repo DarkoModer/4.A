@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shiporder xsi:noNamespaceSchemaLocation="schema.xsd" orderid="string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <orderperson>Maj</orderperson>
+  <shipto>
+    <name>Maj Markez</name>
+    <address>Pod mostam 69</address>
+    <city>Ptuj</city>
+    <country>Slovenija</country>
+  </shipto>
+  <item>
+    <title>Kilo brašna</title>
+    <note>Lepo zapakiraj</note>
+    <quantity>2</quantity>
+    <price>2</price>
+  </item>
+</shiporder>

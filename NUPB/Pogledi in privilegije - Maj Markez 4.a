@@ -1,0 +1,52 @@
+Pogledi in privilegije - Maj Markez 4.a
+
+
+Insert stavki so se mi zbrisali. Sem pa dodal izdelke id=6-10
+
+a4_markez=> select * from izdelki;
+ id |      ime_izdelka       | cena  | ddv_procenti | maloprodajna_cena
+----+------------------------+-------+--------------+-------------------
+  1 | Knjiga o 9/11          | 18.99 |            3 |             19.99
+  2 | Kruh                   |  1.63 |            2 |               1.8
+  3 | Jajca                  |  2.53 |            2 |               2.6
+  4 | Geforce RTX 3080       |  1404 |            1 |              1800
+  5 | Geforce RTX 2070 Super | 436.4 |            1 |               560
+  6 | Pingo sokec            |  0.45 |            2 |              0.49
+  7 | Sprite                 |  1.08 |            2 |               1.2
+  8 | Coca Cola              |  1.81 |            2 |                 2
+  9 | Cedevita               |  2.26 |            2 |               2.5
+ 10 | Cokoladno mleko        |   0.9 |            2 |                 1
+(10 rows)
+
+
+a4_markez=> grant all privileges on database a4_markez to b4_predovnik;
+GRANT
+a4_markez=> grant all privileges on all tables in schema public to b4_predovnik;
+GRANT
+
+
+a4_markez=> create view view_stranke as select izdelki.ime_izdelka, izdelki.maloprodajna_cena from izdelki;
+CREATE VIEW
+a4_markez=> create view view_natakarji as select * from izdelki;
+CREATE VIEW
+a4_markez=> create view view_racuni as select * from racuni;
+CREATE VIEW
+
+
+
+a4_markez=> grant select on view_stranke to a4_petrovic;
+GRANT
+a4_markez=> grant select on view_stranke to a4_vaupotic;
+GRANT
+a4_markez=> grant select on view_stranke to a4_pihler;
+GRANT
+a4_markez=> grant select on view_stranke to a4_lovrencic;
+GRANT
+a4_markez=> grant select on view_natakarji to a4_milosic;
+GRANT
+a4_markez=> grant select on view_natakarji to a4_celan;
+GRANT
+a4_markez=> grant select on view_racuni to a4_celan;
+GRANT
+a4_markez=> grant select on view_racuni to a4_milosic;
+GRANT

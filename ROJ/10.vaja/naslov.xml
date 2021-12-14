@@ -1,0 +1,12 @@
+ <?xml version="1.0" encoding="utf-8"?>
+
+<addresses xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <address>
+    <name>Domac naslov</name>
+    <street>Opasna ulica 1, 2250 Ptuj</street>
+  </address>
+  <address>
+    <name>Sluzben naslov</name>
+    <street>Pod mostom 6, 2000 Maribor</street>
+  </address>
+</addresses>

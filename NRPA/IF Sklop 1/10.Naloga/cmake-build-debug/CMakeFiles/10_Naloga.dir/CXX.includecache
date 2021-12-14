@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Sola/4.a/NRPA/IF Sklop 1/10.Naloga/main.cpp
+iostream
+-
+ctime
+-
+cstdlib
+-
+
