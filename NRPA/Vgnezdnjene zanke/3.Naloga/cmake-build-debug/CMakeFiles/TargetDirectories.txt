@@ -1,0 +1,3 @@
+D:/Sola/4.a/NRPA/Vgnezdnjene zanke/3.Naloga/cmake-build-debug/CMakeFiles/3_Naloga.dir
+D:/Sola/4.a/NRPA/Vgnezdnjene zanke/3.Naloga/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Sola/4.a/NRPA/Vgnezdnjene zanke/3.Naloga/cmake-build-debug/CMakeFiles/rebuild_cache.dir

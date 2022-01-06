@@ -1,0 +1,3 @@
+D:/Sola/4.a/NRPA/Nizi_in_polja/10.Naloga/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Sola/4.a/NRPA/Nizi_in_polja/10.Naloga/cmake-build-debug/CMakeFiles/10_Naloga.dir
+D:/Sola/4.a/NRPA/Nizi_in_polja/10.Naloga/cmake-build-debug/CMakeFiles/edit_cache.dir
